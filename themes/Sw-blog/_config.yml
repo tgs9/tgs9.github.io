@@ -4,14 +4,14 @@
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  博客首页: http://bestwing.me
-  文章归档: /archives
-  学习导航: /CTFStudy
-  PWNABLE: /PWNABLE
-  个人简历: /resume
+  博客首页: 
+  文章归档: 
+  学习导航:  
+  个人简历: 
+  关于我们:
 
 # Link to your avatar | 填写头像地址
-avatar: img/head.jpg
+avatar: img/tx1.gif
 
 # Small icon of Your site | 站点小图标地址
 favicon: "http://oayoilchh.bkt.clouddn.com/2016/07/27/18:05:26%20"
@@ -23,11 +23,11 @@ favicon: "http://oayoilchh.bkt.clouddn.com/2016/07/27/18:05:26%20"
 ## RSS requires a plugin to take effect | 使用 RSS 需先安装对应插件
 ## https://github.com/hexojs/hexo-generator-feed
 subnav:
-  mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=kvH99PT39-Dn_efS5PvivOPjvPH9-w"
-  github: "https://github.com/WinMin"
-  zhihu: "https://www.zhihu.com/people/Swings"
-  weibo: "http://weibo.com/2672317963/profile?topnav=1&wvr=6&is_all=1"
-  rss: /atom.xml
+  mail: "#"
+  github: "#"
+  zhihu: "#"
+  weibo: "#"
+  rss: "#"
   # facebook: "#"
   # rss: /atom.xml
   # pinterest: "#"
@@ -81,7 +81,7 @@ youyan:
 background:
   on: true
   #on: false
-  background_sum: 24
+  background_sum: 3
   background_image: 109
 
 highlight_style:
@@ -133,31 +133,6 @@ friends:
   麦香浓郁: http://mxny.org/
   K0sh1: http://whereisk0shl.top/
   信鑫: http://www.ycjcl.cc/
-  ByStundet表哥: http://bystudent.com/
-  汪神_Jarvis: https://www.jarviswang.me/
-  Chu: http://sh3ll.me/
-  4ido10n: https://www.hackfun.org/
-  L3m0n: http://www.cnblogs.com/iamstudy
-  muhe: http://o0xmuhe.me/
-  _画船听雨: http://blog.nuptzj.cn/
-  Virink: http://www.virzz.com/index.html
-  国光: http://www.sqlsec.com/
-  老锥: http://www.bodkin.ren/
-  C1zel: http://www.cizel.cn/
-  1phan: http://1phan.cc
-  liuil: https://www.liuil.top/
-  Ox9A82: http://www.cnblogs.com/Ox9A82/
-  burnegg: http://burnegg.com/
-  jwr-sec: https://jwrsec.cn/
-  苏打: http://sudalover.cn/
-  VeroFess: http://blog.binklac.com
-  bendawang: http://www.bendawang.site/
-  hook: http://weeklyalgo.codes/
-  Flier'blog: http://www.flier.net.cn/
-  mutepig: http://www.mutepig.club
-  Silver: https://blog.iret.xyz/list.aspx
-  Simple: http://simp1e.leanote.com/
-  Processor: http://processor.pub/
 
 # 打赏
 # 请在需要打赏的文章的md文件头部，设置属性reward: true
