@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>唐国舜</title>
+  
+  <subtitle>既然选择了远方,便只顾风雨兼程!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-01-10T01:28:47.468Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>tgs</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>extends和implements同时使用时</title>
+    <link href="http://yoursite.com/2017/12/07/extends%E5%92%8Cimplements%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6/"/>
+    <id>http://yoursite.com/2017/12/07/extends和implements同时使用时/</id>
+    <published>2017-12-07T12:41:40.000Z</published>
+    <updated>2018-01-10T01:28:47.468Z</updated>
+    
+    <content type="html"><![CDATA[<p>interface I1{void f();}<br>interface I2{int f(int i);}<br>interface I3{int f();}<br>class C{<br>public int f() { return 1; }<br>}<br>class C2 implements I1,I2{<br>public void f() {}<br>public int f(int i) { return 1; }<br>}<br>class C3 extends C implements I2{<br>public int f(int i) { return 1; }<br>}<br>class C4 extends C implements I3{<br>public int f() { return 1; }<br>}<br>//class C5 extends C implements I1{}<br>//interface I4 extends I1,I3{};<br>在同时使用extends和implements的时候，会出现这样一个有趣的问题。就是在我最后两个注释的地方，如果去掉注释是会报错的。</p><p>第一个注释的地方，是因为接口I1和类C都有一个同名的方法f()，而且它们的参数列表也是相同的，我们知道，Java是通过参数列表的个数和类型来判断同名方法的唯一性的。因为类C5继承了类C，所以也就把类C 中的方法f()继承过来了，但是又必须实现接口I1中的方法，现在类C5中已经有个f()方法了，但是该方法和接口I1中 的方法返回类型是不一样的。所以此时会报错，于是我想当然的在类C5中加了个和接口I1返回类型一样的方法，结果 还是报错。此时我已经意识到了类C5中已经有两个无参的方法f()了，java虚拟机会认为它们是同一个方法，因为方法的重载仅根据参数列表来判断的。<br>第二个注释的地方，还是因为I1和I3中的方法名相同，且参数列表也相同，只是它们返回类型不同。既要同时实现这两个接口，又要通过Java的方法重载机制。这种情况是几乎不可能的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;interface I1{void f();}&lt;br&gt;interface I2{int f(int i);}&lt;br&gt;interface I3{int f();}&lt;br&gt;class C{&lt;br&gt;public int f() { return 1; }&lt;br&gt;}&lt;br&gt;clas
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
